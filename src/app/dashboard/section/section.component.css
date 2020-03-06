@@ -1,0 +1,176 @@
+.img{
+    background: no-repeat;
+   padding: 0;
+   height:440px;
+   width: 100%;
+   background-image:url(/assets/images/banner.jpg);
+}
+.text{
+    padding-left: 110px;
+    padding-top: 80px;
+    padding-right: 650px;
+    text-align:justify;
+    color: white;
+    font-size: 40px;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif
+}
+span{
+    font-weight: bold;
+    font-size: 38px;
+}
+.button{
+    border: none;
+    background-color:orange;
+    margin-left: 110px;
+    border-radius: 50px;
+    color: white;
+    height: 48px;
+    width: 196px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.box{
+    height: 550px;
+    width: 100%;
+    
+}
+h6{
+   color:grey;
+   text-align: center;
+   padding-top: 90px;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color:rgb(51, 49, 49);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    
+}
+.medborder{
+    font-weight: 500;
+    font-size: 35px;
+    padding-bottom: 20px;
+    border-bottom:3px solid orange;
+}
+.text1{
+    color:grey;
+   text-align: center;
+   padding-top: 30px;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.d-flex{
+    padding-top: 35px;
+}
+.d-flex img{
+    margin:0 10px 0 10px;
+}
+.box1{
+    background-color:rgb(243, 242, 242);
+    height: 650px;
+    width: 100%;
+    margin-bottom: 40px;
+    
+}
+.img1{
+    float: left;
+    width: 100%;
+    background-image: url(/assets/images/benifit-01.jpg);
+    background-repeat: no-repeat;
+}
+.img2{
+    float: left;
+    width: 100%;
+   background-image:url(/assets/images/benifit-02.jpg);
+   background-repeat: no-repeat;
+}
+.img3{
+    float:left;
+    width: 100%;
+   background-image:url(/assets/images/benifit-03.jpg);
+   background-repeat: no-repeat;
+}
+.imgposition1{ 
+    padding-top: 25px;
+    padding-left: 65px;
+}
+h4{
+   font-size: 19px;
+   padding-left: 18px;
+   color:rgb(70, 67, 67);
+   padding-top: 28px;
+   font-size: 22px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    padding-left: 18px;
+   
+}
+li{
+    padding-top: 10px;
+    list-style-type:none;
+    padding-left: 25px;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/check.png);
+    background-position-y: 14px;
+}
+.box2{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.space{
+    text-align: center;
+    padding-top: 90px;
+}
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 17px;
+    text-align: center;
+}
+.text2{
+    color:grey;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box3{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(243, 242, 242);
+}
+h2{
+    padding-top: 90px;
+    color:rgb(51, 49, 49);
+    text-align: center;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    font-size: 35px;
+     
+}
+.textbox{
+    height: 48px;
+    width: 310px;
+    margin-top: 15px;
+}
+.button1{
+    margin-top: 20px;
+    margin-left: 550px;
+    margin-bottom: 80px;
+    border: none;
+    background-color:orange;
+    border-radius: 50px;
+    color: white;
+    height: 48px;
+    width: 196px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.space1{
+    text-align: center;
+    padding-top: 10px;
+}

@@ -1,0 +1,54 @@
+.img11{
+    background: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-image:url(/assets/images/footer.jpg);
+ }
+ .space2{
+     padding-left: 20px;
+     padding-top: 16px;
+ }
+ .space2 h4{
+     color: rgb(252, 252, 252);
+     font-family: Georgia, Arial, Helvetica, sans-serif;
+     font-size: 22px;
+     padding-bottom: 18px; 
+ }
+ .space2 p{
+     color:white;
+     line-height: 9px;
+     padding-left: 20px;
+     text-align: left;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .form-control{ 
+     margin-left:15px;
+     margin-bottom: 10px;
+ }
+ .textbox1{
+     height: 85px;
+     width: 250px;
+     margin-top: 50px;
+     text-align:left;
+ }
+ .button2{
+     margin-top: 20px;
+     margin-left: 115px;
+     margin-bottom: 57px;
+     border: none;
+     background-color:orange;
+     border-radius: 50px;
+     color: white;
+     height: 45px;
+     width: 135px;
+     font-size: 18px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .fooo{
+     text-align: center;
+     background-color: rgb(40, 44, 44);
+     color: rgb(194, 193, 193);
+     padding: 20px;
+     font-size: 13px;
+ }
