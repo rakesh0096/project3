@@ -65,7 +65,7 @@
         background-color: #fff;
         color: #000000; }
     .login-wrapper a.forgot-password-link {
-      color: #080808;
+      color: red;
       font-size: 14px;
       text-decoration: underline;
       display: inline-block;
@@ -91,5 +91,3 @@
        object-fit: cover;
     -o-object-position: left;
        object-position: left; }
-  
-  /*# sourceMappingURL=login.css.map */

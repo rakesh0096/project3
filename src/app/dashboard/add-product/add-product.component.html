@@ -1,0 +1,35 @@
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card addProducts-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="assets/images/products.png" alt="addProducts" class="addProducts-card-img">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <p class="addProducts-card-description">Add Products</p>
+              <form >
+                <div class="form-group">
+                  <label for="ID" class="sr-only">ID</label>
+                  <input type="text" formControlName="ID" id="ID" class="form-control" placeholder="ID">
+                </div>
+                <div class="form-group">
+                  <label for="ProdName" class="sr-only">ProdName</label>
+                  <input type="text" formControlName="ProdName" id="ProdName" class="form-control" placeholder="ProdName">
+                </div>
+                <div class="form-group">
+                  <label for="Brand" class="sr-only">Brand</label>
+                  <input type="text" formControlName="Brand" id="Brand" class="form-control" placeholder="Brand">
+                </div>
+                  <div class="form-group">
+                    <label for="Price" class="sr-only">Price</label>
+                    <input type="Price" formControlName="Price" id="Price" class="form-control" placeholder="Price">
+                  </div>
+                  <input name="addProducts" id="addProducts" routerLink="/dashboard/products" class="btn btn-block addProducts-btn mb-4" type="submit" value="Add Products">
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>

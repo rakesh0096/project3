@@ -1,2 +1,21 @@
 <app-header></app-header>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th scope="row">{{product._id}}</th>
+        <td>{{product.prodImage}}</td>
+        <td>{{product.prodName}}</td>
+        <td>{{product.prodDesc}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button routerLink="/dashboard/add-product">Add Products</button>
 <app-footer></app-footer>

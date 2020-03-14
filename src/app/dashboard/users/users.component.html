@@ -1,2 +1,23 @@
 <app-header></app-header>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email address</th>
+        <th scope="col">Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users"> 
+        <th scope="row">{{user._id }}</th>
+        <td>{{user.firstName }}</td>
+        <td>{{user.lastName }}</td>
+        <td>{{user.email }}</td>
+        <td>{{user.password }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button routerLink="/dashboard/add-user">Add Users</button>
 <app-footer></app-footer>

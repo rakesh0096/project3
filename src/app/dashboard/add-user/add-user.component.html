@@ -1,17 +1,14 @@
-<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+<!-- <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
   <div class="container">
-    <div class="card signUp-card">
+    <div class="card addUser-card">
       <div class="row no-gutters">
         <div class="col-md-5">
-          <img src="assets/images/signUp.jpg" alt="signUp" class="signUp-card-img">
+          <img src="assets/images/bg-cta.jpg" alt="addUser" class="addUser-card-img">
         </div>
         <div class="col-md-7">
           <div class="card-body">
-            <div class="brand-wrapper">
-              <img src="assets/images/signUplogo.svg" alt="logo" class="logo">
-            </div>
-            <p class="signUp-card-description">Sign-Up </p>
-            <form [formGroup]='signUp'(ngSubmit)='signup()'>
+            <p class="addUser-card-description">Add User </p>
+            <form [formGroup]='addUser'(ngSubmit)='adduser()'>
               <div class="form-group">
                 <label for="firstName" class="sr-only">firstName</label>
                 <input type="text" formControlName="firstName" id="firstName" class="form-control" placeholder="FirstName">
@@ -28,13 +25,8 @@
                   <label for="password" class="sr-only">Password</label>
                   <input type="password" formControlName="password" id="password" class="form-control" placeholder="Password">
                 </div>
-                <input name="signUp" id="signUp" class="btn btn-block signUp-btn mb-4" type="submit" value="Sign-Up"[disabled]='!signUp.valid'>
+                <input name="addUser" id="addUser" class="btn btn-block addUser-btn mb-4" type="submit" value="add-User"[disabled]='!addUser.valid'>
               </form>
-              <p class="signUp-card-footer-text">Do you have any account? <a routerLink="/login">login here</a></p>
-              <nav class="signUp-card-footer-nav">
-                <a href="#!">Terms of use.</a>
-                <a href="#!">Privacy policy</a>
-              </nav>
               <p>
                Form Status:{{signUp.status}}
               </p>
@@ -43,4 +35,4 @@
       </div>
     </div>
   </div>
-</main>
+</main> -->
