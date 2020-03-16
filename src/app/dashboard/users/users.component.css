@@ -1,10 +1,9 @@
-button{
+.btn1{
   margin-left: 89%;
   margin-bottom: 10px;
   border: none;
   border-radius: 27px;
   height: 45px;
-  width: 100px;
+  width: 110px;
   font-size: 18px;
 }
-  

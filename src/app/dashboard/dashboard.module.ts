@@ -13,7 +13,6 @@ import { LogOutComponent } from './log-out/log-out.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { AddProductComponent } from './add-product/add-product.component';
 
-
 @NgModule({
   declarations: [DashboardComponent, HeaderComponent, SectionComponent, FooterComponent, UsersComponent, ProductsComponent, MyProfileComponent, LogOutComponent, AddUserComponent, AddProductComponent],
   imports: [

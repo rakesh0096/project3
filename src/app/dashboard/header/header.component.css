@@ -1,12 +1,8 @@
 .navbar-collapse{
-    margin-left: 685px;
+    margin-left: 510px;
 }
 .navbar img{
     padding-left: 75px;
-}
-.navbar-brand{
-    font-size: 14px;
-   
 }
 .navbar-brand:hover{
     border-top:3px solid orange;

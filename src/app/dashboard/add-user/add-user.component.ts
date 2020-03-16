@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MainService } from '../../main.service';
 import { FormBuilder, Validators } from '@angular/forms';
+import { MainService } from '../../services/main.service';
 import { Router } from '@angular/router';
 
 
@@ -25,7 +25,6 @@ export class AddUserComponent implements OnInit {
     ) { }
 
   adduser(){
-
     this.service.postUsers({
       firstName:this.addUser.value.firstName,
       lastName:this.addUser.value.lastName,
@@ -36,8 +35,7 @@ export class AddUserComponent implements OnInit {
       this.users = res.data;
       console.log(this.users);
       if(res.success === true){
-        alert('User Successfully Added')
-        this.router.navigateByUrl("/dashboard/users")
+        this.router.navigate([`${'/dashboard/users'}`]);
       }
       else{
         alert(res.message);

@@ -6,6 +6,7 @@
         <th scope="col">Image</th>
         <th scope="col">Name</th>
         <th scope="col">Description</th>
+        <th scope="col">Update/Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -14,8 +15,10 @@
         <td>{{product.prodImage}}</td>
         <td>{{product.prodName}}</td>
         <td>{{product.prodDesc}}</td>
+        <td><button routerLink="/dashboard/add-product" class="btn btn-warning">Edit</button> &nbsp;
+          <button routerLink="/dashboard/products" class="btn btn-danger">Delete</button></td>
       </tr>
     </tbody>
   </table>
-  <button routerLink="/dashboard/add-product">Add Products</button>
+  <button routerLink="/dashboard/add-product" class="btn1">Add Products</button>
 <app-footer></app-footer>

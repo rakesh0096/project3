@@ -1,5 +1,5 @@
-button{
-    margin-left: 84%;
+.btn1{
+    margin-left: 85%;
     margin-bottom: 10px;
     border: none;
     border-radius: 27px;
@@ -7,4 +7,4 @@ button{
     width: 150px;
     font-size: 18px;
   }
-    
+  

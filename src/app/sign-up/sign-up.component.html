@@ -14,23 +14,39 @@
             <form [formGroup]='signUp'(ngSubmit)='signup()'>
               <div class="form-group">
                 <label for="firstName" class="sr-only">firstName</label>
-                <input type="text" formControlName="firstName" id="firstName" class="form-control" placeholder="FirstName">
+                <input type="text" formControlName="firstName"  id="firstName" class="form-control" placeholder="FirstName" required minlength="3">
+                <!-- <small *ngIf="firstName.invalid && (signUp.controls['firstName'].dirty || signUp.controls['firstName'].touched)" class="text-danger">
+                <small *ngIf="firstName.errors.required" class="text-danger">First Name Required</small>
+                <small *ngIf="firstName.errors.minlength" class="text-danger">First Name should contain minimum three character</small>
+                </small> -->
               </div>
               <div class="form-group">
                 <label for="lastName" class="sr-only">lastName</label>
-                <input type="text" formControlName="lastName" id="lastName" class="form-control" placeholder="LastName">
+                <input type="text" formControlName="lastName" id="lastName" class="form-control" placeholder="LastName" required minlength="2">
+                <!-- <small *ngIf="lastName.invalid && (signUp.controls['lastName'].dirty || signUp.controls['lastName'].touched)" class="text-danger">
+                <small *ngIf="lastName.errors.required" class="text-danger">Last Name Required</small>
+                <small *ngIf="lastName.errors.minlength" class="text-danger">Last Name should contain minimum two character</small>
+                </small> -->
               </div>
                 <div class="form-group">
                   <label for="email" class="sr-only">Email</label>
-                  <input type="email" formControlName="email" id="email" class="form-control" placeholder="Email address">
+                  <input type="email" formControlName="email" id="email" class="form-control" placeholder="Email address" required >
+                  <!-- <small *ngIf="email.invalid && (signUp.controls['email'].dirty || signUp.controls['email'].touched)" class="text-danger">
+                  <small *ngIf="email.errors.required" class="text-danger">Email Required</small>
+                  <small *ngIf="email.errors.email" class="text-danger">First Name should contain minimum three character</small>
+                  </small> -->
                 </div>
                 <div class="form-group mb-4">
                   <label for="password" class="sr-only">Password</label>
-                  <input type="password" formControlName="password" id="password" class="form-control" placeholder="Password">
+                  <input type="password" formControlName="password" id="password" class="form-control" placeholder="Password" required minlength="5">
+                  <!-- <small *ngIf="password.invalid && (signUp.controls['password'].dirty || signUp.controls['password'].touched)" class="text-danger">
+                  <small *ngIf="password.errors.required" class="text-danger">Password Required</small>
+                  <small *ngIf="password.errors.minlength" class="text-danger">Password should contain minimum five character</small>
+                  </small> -->
                 </div>
                 <input name="signUp" id="signUp" class="btn btn-block signUp-btn mb-4" type="submit" value="Sign-Up"[disabled]='!signUp.valid'>
               </form>
-              <p class="signUp-card-footer-text">Do you have any account? <a routerLink="/login">login here</a></p>
+              <p class="signUp-card-footer-text"> Do you have any account? <a routerLink="/login"> login here </a> </p>
               <nav class="signUp-card-footer-nav">
                 <a href="#!">Terms of use.</a>
                 <a href="#!">Privacy policy</a>
