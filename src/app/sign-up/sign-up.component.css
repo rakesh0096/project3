@@ -18,7 +18,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
+       object-fit: cover;
        object-fit: cover; }
   .signUp-card .card-body {
     padding: 85px 60px 60px; }
@@ -40,17 +40,8 @@ body {
     font-size: 13px;
     line-height: 15;
     font-weight: normal; }
-    .signUp-card .form-control::-webkit-input-placeholder {
-      color: #919aa3; }
-    .signUp-card .form-control::-moz-placeholder {
-      color: #919aa3; }
-    .signUp-card .form-control:-ms-input-placeholder {
-      color: #919aa3; }
-    .signUp-card .form-control::-ms-input-placeholder {
-      color: #919aa3; }
-    .signUp-card .form-control::placeholder {
-      color: #919aa3; }
-  .signUp-card .signUp-btn {
+   
+    .signUp-card .signUp-btn {
     padding: 13px 20px 12px;
     background-color: #47391b;
     border-radius: 4px;

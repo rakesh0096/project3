@@ -9,7 +9,9 @@ import { MainService } from '../../services/main.service';
 })
 export class UsersComponent implements OnInit {
   users: any;
-  constructor(private service: MainService) { }
+  constructor(
+    private service: MainService
+    ) { }
 
   getUsers(){
     this.service.getUsers()
@@ -18,6 +20,15 @@ export class UsersComponent implements OnInit {
         console.log(this.users);
     })
   }
+
+  deleteUser(id:any){
+    this.service.deleteUsers(id)
+    .subscribe(res => {
+      this.users = res.data;
+    })
+    this.getUsers();
+  }
+
 
   ngOnInit() {
     this.getUsers();

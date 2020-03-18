@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { MainService } from '../../services/main.service';
 import { Router } from '@angular/router';
 
@@ -10,40 +10,69 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent implements OnInit {
-
-  addUser = this.fb.group({
-    firstName:['',Validators.required],
-    lastName:['',Validators.required],
-    email:['',[Validators.required,Validators.email]],
-    password:['',[Validators.required,Validators.minLength(5)]]
-  });
+id:any;
   users: any;
+  addUser: FormGroup;
   constructor(
     private fb:FormBuilder ,
     private service:MainService,
     public router:Router
     ) { }
 
+    ngOnInit() {
+      this.addUser = this.fb.group({
+        firstName:['',
+        [Validators.required,
+        Validators.minLength(3)
+        ]],
+        lastName:['',[
+        Validators.required,
+        Validators.minLength(3)
+        ]],
+        email:['',[
+        Validators.required,
+        Validators.email
+        ]],
+        password:['',[
+        Validators.required,
+        Validators.minLength(5)
+        ]]
+      });
+    }
+  
+// Get items
+
+  get firstName(){
+    return this.addUser.get('firstName');
+  }
+  get lastName(){
+    return this.addUser.get('lastName');
+  }
+  get email(){
+    return this.addUser.get('email');
+  }
+  get password(){
+    return this.addUser.get('password');
+  }
+ 
+ 
+
   adduser(){
-    this.service.postUsers({
+    var userData = {
       firstName:this.addUser.value.firstName,
       lastName:this.addUser.value.lastName,
       email:this.addUser.value.email,
       password:this.addUser.value.password
-    })
-    .subscribe((res) => {
-      this.users = res.data;
-      console.log(this.users);
+    }
+    this.service.postUsers(userData)
+    .subscribe(res=>{
       if(res.success === true){
-        this.router.navigate([`${'/dashboard/users'}`]);
+        this.router.navigateByUrl('/dashboard/users');
       }
       else{
         alert(res.message);
       }
-    });
+    })
   }
-
-
-  ngOnInit() {}
 
 }

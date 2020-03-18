@@ -1,4 +1,4 @@
-<!-- <div class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
   <div class="container">
     <div class="card addUser-card">
       <div class="row no-gutters">
@@ -7,32 +7,44 @@
         </div>
         <div class="col-md-7">
           <div class="card-body">
-            <p class="addUser-card-description">Add User </p>
+            <p class="addUser-card-description">Add User</p>
             <form [formGroup]='addUser'(ngSubmit)='adduser()'>
               <div class="form-group">
-                <label for="firstName" class="sr-only">firstName</label>
-                <input type="text" formControlName="firstName" id="firstName" class="form-control" placeholder="FirstName">
+                <label for="firstName" >First Name</label>
+                <input type="text" formControlName="firstName" class="form-control" placeholder="FirstName">
+                <span *ngIf="firstName.invalid && firstName.touched" class="text-danger">
+                  First Name is required and length must be in 3 characters.
+                </span>
               </div>
               <div class="form-group">
-                <label for="lastName" class="sr-only">lastName</label>
-                <input type="text" formControlName="lastName" id="lastName" class="form-control" placeholder="LastName">
+                <label for="lastName" >LastName</label>
+                <input type="text" formControlName="lastName" class="form-control" placeholder="LastName">
+                <span *ngIf="lastName.invalid && lastName.touched" class="text-danger">
+                  Last Name is required and length must be in 3 characters.
+                </span>
               </div>
-                <div class="form-group">
-                  <label for="email" class="sr-only">Email</label>
-                  <input type="email" formControlName="email" id="email" class="form-control" placeholder="Email address">
-                </div>
-                <div class="form-group mb-4">
-                  <label for="password" class="sr-only">Password</label>
-                  <input type="password" formControlName="password" id="password" class="form-control" placeholder="Password">
-                </div>
-                <input name="addUser" id="addUser" class="btn btn-block addUser-btn mb-4" type="submit" value="add-User"[disabled]='!addUser.valid'>
-              </form>
-              <p>
-               Form Status:{{signUp.status}}
-              </p>
+              <div class="form-group">
+                <label for="email" >Email</label>
+                <input type="email" formControlName="email" class="form-control" placeholder="Email address">
+                <span *ngIf="email.invalid && email.touched" class="text-danger">
+                  Invalid Email Address.
+                </span>
+              </div>
+              <div class="form-group mb-4">
+                <label for="password" >Password</label>
+                <input type="password" formControlName="password" class="form-control" placeholder="Password">
+                <span *ngIf="password.invalid && password.touched" class="text-danger">
+                  Password is required and length must be in 5 characters.
+                </span>
+              </div>
+              <input name="addUser" class="btn btn-block addUser-btn mb-4" type="submit" value="add-User"[disabled]='!addUser.valid'>
+            </form>
+            <p>
+              Form Status:{{signUp.status}}
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div> -->
+</main>

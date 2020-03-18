@@ -12,11 +12,27 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [DashboardComponent, HeaderComponent, SectionComponent, FooterComponent, UsersComponent, ProductsComponent, MyProfileComponent, LogOutComponent, AddUserComponent, AddProductComponent],
+  declarations: [
+    DashboardComponent, 
+    HeaderComponent, 
+    SectionComponent, 
+    FooterComponent, 
+    UsersComponent, 
+    ProductsComponent, 
+    MyProfileComponent, 
+    LogOutComponent, 
+    AddUserComponent, 
+    AddProductComponent
+  ],
   imports: [
     CommonModule,
+    RouterModule,
+    ReactiveFormsModule,
+    FormsModule,
     DashboardRoutingModule
   ]
 })

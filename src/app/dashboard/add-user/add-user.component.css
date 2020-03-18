@@ -3,7 +3,6 @@ body {
   background-color: #d0d0ce;
   min-height: 100vh; }
 
-
 .addUser-card {
   border: 0;
   border-radius: 27.5px;
@@ -37,16 +36,7 @@ body {
     font-size: 13px;
     line-height: 15;
     font-weight: normal; }
-    .addUser-card .form-control::-webkit-input-placeholder {
-      color: #919aa3; }
-    .addUser-card .form-control::-moz-placeholder {
-      color: #919aa3; }
-    .addUser-card .form-control:-ms-input-placeholder {
-      color: #919aa3; }
-    .addUser-card .form-control::-ms-input-placeholder {
-      color: #919aa3; }
-    .addUser-card .form-control::placeholder {
-      color: #919aa3; }
+    
   .addUser-card .addUser-btn {
     padding: 13px 20px 12px;
     background-color: #47391b;
